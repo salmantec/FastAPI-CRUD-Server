@@ -8,7 +8,7 @@ from .database import engine
 
 app = FastAPI()
 
-app.include_router(notes.router, prefix="/api/notes", tags=["notes"])
+# app.include_router(notes.router, prefix="/api/notes", tags=["notes"])
 
 
 @app.get("/api/healthcheck")
